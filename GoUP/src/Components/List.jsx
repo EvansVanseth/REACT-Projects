@@ -6,6 +6,7 @@ const TEXTOS_TIPOS = {
   bad: 'MALO'
 }
 
+// eslint-disable-next-line react/prop-types
 export function List ({verVentana}){
   const textos = cargarTextos()
   const things = {
