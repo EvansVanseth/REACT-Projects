@@ -1,0 +1,153 @@
+:root {
+  --FontTitle: "Protest Revolution", sans-serif;
+  --FontMain:  "Roboto", sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--FontMain);
+  font-size: 1.3rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--FontTitle);
+  margin: .5rem 0;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+textarea {
+  border: .2rem solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+button {
+  width: 96%;
+  height: 4rem;
+  padding: .3rem;
+  font-weight: 700;
+  border: .2rem solid black;
+  border-radius: 1rem;
+}
+
+.contenedor {
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+.select-type {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  height: 3rem;
+  padding-bottom: 1.7rem;
+  margin-bottom: 2rem;
+  border-bottom: .3rem solid black;
+}
+
+.select-type button {
+  font-family: var(--FontTitle);
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 46%;
+  height: auto;
+  padding: .3rem;
+  transition-property: border, transform;
+  transition-duration: .3s;
+}
+
+.btn-god {
+  color: black;
+  background-color: #76bd82;
+  border-color: #225f2c;
+  opacity: 0.6;
+}
+.btn-bad {
+  color: black;
+  background-color: #bd7676;
+  border-color: #5f2222;
+  opacity: 0.6;
+}
+
+.selected {
+  transform: scale(1.2);
+  opacity: 1;
+  /* border: .3rem; */
+}
+
+.btn-add {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.btn-change-window {
+  font-size: 1.7rem;
+}
+
+.resum {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+  border-bottom: .2rem dotted black;
+  margin-bottom: 1rem;
+}
+.resum p {
+  border: .3rem solid black;
+  border-radius: 3rem;
+  width: 40%;
+  padding: .5rem;
+  font-size: 2.2rem;
+}
+.god-things {
+  background-color: #76bd82;
+}
+.bad-things {
+  background-color: #bd7676;
+}
+.list-title {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.list-element {
+  /* border: .2rem solid black; */
+  text-align: left;
+}
+.list-element h4 {
+  margin: .5rem 0;
+  padding: .3rem 0 0 .7rem;
+  border-bottom: .2rem solid black;
+  border-top-left-radius: 1rem;
+}
+.list-element p {
+  margin-bottom: 2rem;
+  margin-top: .3rem;
+  padding:  0 1rem;
+}
+.le-tipo-god {
+  background: linear-gradient(to right, #76bd82 20%, white 80%)
+}
+.le-tipo-bad {
+  background: linear-gradient(to right, #bd7676 20%, white 80%)
+}
+
+
+
