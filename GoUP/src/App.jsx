@@ -10,7 +10,8 @@ function App() {
   const [textos, setTextos] = useState(cargarTextos())
   // ACTUALIZAR ESTADOS
   function crearNovedad ({text, selectedTipo}){
-    if(!text || text==='') return;
+    if(!text || text==='') return false
+    if(!selectedTipo) return false
     const newTextos = [...textos]
     const newText = {
       text: text,
@@ -20,6 +21,7 @@ function App() {
     newTextos.push(newText)
     setTextos(newTextos)
     guardarTextos(newTextos)
+    return true
   }
   function verVentana(numV) {
     setVentana(numV)

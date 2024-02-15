@@ -14,7 +14,10 @@ export function Novedad({crearNovedad, verVentana}) {
   function setGod() { selectTipo(TIPOS.G) }
   function setBad() { selectTipo(TIPOS.B) }
   function guardarDatos (){
-    crearNovedad({text: text, selectedTipo: selectedTipo})
+    if(crearNovedad({text: text, selectedTipo: selectedTipo})) {
+      setText('')
+      selectTipo(undefined)
+    }
   }
   function cambiarVentana() {
     verVentana(1)
@@ -23,7 +26,7 @@ export function Novedad({crearNovedad, verVentana}) {
   return (
     <div className='contenedor'>
       <h1>¿Novedades?</h1>
-      <textarea onChange={changeText} placeholder='Aqui puedes escribir una corta descripción de algo que acabe de ocurrir' cols="30" rows="10"></textarea>
+      <textarea onChange={changeText} value={text} placeholder='Aqui puedes escribir una corta descripción de algo que acabe de ocurrir' cols="30" rows="10"></textarea>
       <h2>¿Como lo valoras?</h2>
       <p>Indica si lo que ha ocurrido lo has sentido como algo bueno o malo</p>
       <div className='select-type'>
